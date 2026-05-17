@@ -558,16 +558,16 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:3rem 0 2r
   btn.innerHTML = '<span class="ar">جاري الإرسال...</span><span class="en">Sending...</span>';
 
   const payload = {
-    access_key: accessKey,
-    subject: 'New Coaching Session Request – Dr. Hanan AlAmeen',
-    from_name: 'Dr. Hanan AlAmeen Website',
-    botcheck: '',
-    name,
-    email,
-    phone,
-    session_type: type,
-    message
-  };
+  access_key: 'f4788033-a2c2-448d-80c0-9b43c8ac575c',  // ← hardcoded directly here
+  subject: 'New Coaching Session Request – Dr. Hanan AlAmeen',
+  from_name: 'Dr. Hanan AlAmeen Website',
+  botcheck: '',
+  name,
+  email,
+  phone,
+  session_type: type,
+  message
+};
 
   try {
     const response = await fetch('https://api.web3forms.com/submit', {
