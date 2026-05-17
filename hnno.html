@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark" data-lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>د. حنان الأمين | مدربة حياة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<style>
+:root{--font-display-en:'Cormorant Garamond',serif;--font-body-en:'DM Sans',sans-serif;--font-display-ar:'Tajawal',sans-serif;--font-body-ar:'Tajawal',sans-serif;--font-display:var(--font-display-ar);--font-body:var(--font-body-ar);--transition:0.35s cubic-bezier(.4,0,.2,1);--bg:#0e0f11;--bg-2:#13151a;--bg-3:#1a1d25;--surface:#1e212c;--surface-2:#252933;--border:rgba(255,255,255,0.07);--border-accent:rgba(163,200,177,0.25);--text:#e8ede9;--text-muted:rgba(232,237,233,0.55);--text-faint:rgba(232,237,233,0.3);--accent:#a3c8b1;--accent-2:#c9b99a;--accent-3:#8ab5d0;--accent-glow:rgba(163,200,177,0.12);--hero-gradient:radial-gradient(ellipse 80% 60% at 60% 40%,rgba(163,200,177,0.09) 0%,transparent 70%),radial-gradient(ellipse 50% 50% at 20% 80%,rgba(138,181,208,0.07) 0%,transparent 60%);--card-bg:#1a1d25;--nav-bg:rgba(14,15,17,0.88);--shadow:0 4px 32px rgba(0,0,0,0.45);--shadow-card:0 2px 16px rgba(0,0,0,0.35)}
+[data-theme="light"]{--bg:#f5f6f2;--bg-2:#eef0ea;--bg-3:#e7ebe3;--surface:#ffffff;--surface-2:#f0f2ed;--border:rgba(0,0,0,0.08);--border-accent:rgba(99,148,118,0.25);--text:#1a1f1c;--text-muted:rgba(26,31,28,0.6);--text-faint:rgba(26,31,28,0.35);--accent:#4a8c6a;--accent-2:#9a7a52;--accent-3:#4a85a8;--accent-glow:rgba(74,140,106,0.08);--hero-gradient:radial-gradient(ellipse 80% 60% at 60% 40%,rgba(74,140,106,0.07) 0%,transparent 70%),radial-gradient(ellipse 50% 50% at 20% 80%,rgba(74,133,168,0.05) 0%,transparent 60%);--card-bg:#ffffff;--nav-bg:rgba(245,246,242,0.9);--shadow:0 4px 32px rgba(0,0,0,0.10);--shadow-card:0 2px 16px rgba(0,0,0,0.08)}
+[data-lang="en"]{--font-display:var(--font-display-en);--font-body:var(--font-body-en)}
+[data-lang="ar"]{--font-display:var(--font-display-ar);--font-body:var(--font-body-ar)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden;transition:background var(--transition),color var(--transition)}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{cursor:pointer;font-family:var(--font-body);border:none;background:none}
+input,textarea,select{font-family:var(--font-body);font-size:0.9rem;color:var(--text);background:var(--bg-3);border:1px solid var(--border);border-radius:10px;padding:0.85rem 1.1rem;width:100%;outline:none;transition:border-color var(--transition),box-shadow var(--transition)}
+input:focus,textarea:focus,select:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-glow)}
+select option{background:var(--bg-3)}
+
+/* Lang visibility */
+[data-lang="ar"] .en{display:none!important}
+[data-lang="en"] .ar{display:none!important}
+
+/* Arabic titles — no fake italic */
+[data-lang="ar"] h1.hero-title em,[data-lang="ar"] h2.section-title em{font-style:normal;font-weight:700}
+
+.section-label{font-size:0.72rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem}
+[data-lang="ar"] .section-label{font-size:0.85rem;letter-spacing:0}
+.section-label::before{content:'';display:inline-block;width:20px;height:1px;background:var(--accent);flex-shrink:0}
+h2.section-title{font-family:var(--font-display);font-size:clamp(1.9rem,4vw,3rem);font-weight:300;line-height:1.25;margin-bottom:1.2rem}
+[data-lang="ar"] h2.section-title{font-weight:500;font-size:clamp(1.7rem,3.5vw,2.6rem);line-height:1.4}
+h2.section-title em{font-style:italic;color:var(--accent)}
+.container{max-width:1140px;margin:0 auto;padding:0 2rem}
+section{padding:6rem 0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");opacity:0.025;pointer-events:none;z-index:9999}
+
+/* NAVBAR */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--nav-bg);backdrop-filter:blur(16px) saturate(160%);-webkit-backdrop-filter:blur(16px) saturate(160%);border-bottom:1px solid var(--border);transition:background var(--transition)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav-logo{font-family:var(--font-display);font-size:1.2rem;font-weight:500;color:var(--text)}
+[data-lang="ar"] .nav-logo{font-weight:600}
+.nav-logo span{color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-links a{font-size:0.85rem;font-weight:500;color:var(--text-muted);transition:color var(--transition)}
+[data-lang="ar"] .nav-links a{font-size:0.95rem}
+.nav-links a:hover{color:var(--text)}
+.nav-actions{display:flex;align-items:center;gap:0.65rem}
+.theme-toggle,.lang-toggle{width:38px;height:38px;border-radius:50%;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--text-muted);transition:all var(--transition);flex-shrink:0}
+.theme-toggle{font-size:1rem}
+.lang-toggle{font-size:0.7rem;font-weight:700;letter-spacing:0.03em;font-family:'DM Sans',sans-serif}
+.theme-toggle:hover,.lang-toggle:hover{color:var(--accent);border-color:var(--accent)}
+.btn-nav{padding:0.55rem 1.3rem;background:var(--accent);color:var(--bg);border-radius:50px;font-size:0.82rem;font-weight:600;transition:all var(--transition);white-space:nowrap}
+[data-lang="ar"] .btn-nav{font-size:0.9rem}
+.btn-nav:hover{opacity:0.85;transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:4px}
+.hamburger span{display:block;width:22px;height:1.5px;background:var(--text);border-radius:2px;transition:all var(--transition)}
+.hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mobile-menu{display:none;flex-direction:column;padding:1.5rem 2rem 2rem;border-top:1px solid var(--border);gap:1.2rem}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-size:0.9rem;font-weight:500;color:var(--text-muted);transition:color var(--transition)}
+[data-lang="ar"] .mobile-menu a{font-size:1rem}
+.mobile-menu a:hover{color:var(--accent)}
+
+/* HERO */
+#hero{min-height:100vh;display:flex;align-items:center;padding-top:68px;background:var(--bg);position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:var(--hero-gradient);pointer-events:none}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
+.hero-orb-1{width:500px;height:500px;background:radial-gradient(circle,rgba(163,200,177,0.08) 0%,transparent 70%);top:-100px;right:-100px}
+.hero-orb-2{width:350px;height:350px;background:radial-gradient(circle,rgba(138,181,208,0.06) 0%,transparent 70%);bottom:0;left:5%}
+[data-lang="ar"] .hero-orb-1{right:auto;left:-100px}
+[data-lang="ar"] .hero-orb-2{left:auto;right:5%}
+.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:4rem;align-items:center;position:relative;z-index:1}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:0.6rem;font-size:0.72rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);background:var(--accent-glow);border:1px solid var(--border-accent);padding:0.4rem 1rem;border-radius:50px;margin-bottom:1.5rem}
+[data-lang="ar"] .hero-eyebrow{font-size:0.82rem;letter-spacing:0.04em}
+.hero-eyebrow::before{content:'✦';font-size:0.6rem}
+h1.hero-title{font-family:var(--font-display);font-size:clamp(2.6rem,6vw,4.8rem);font-weight:300;line-height:1.1;margin-bottom:1.5rem;letter-spacing:-0.02em}
+[data-lang="ar"] h1.hero-title{font-weight:500;letter-spacing:0;line-height:1.35;font-size:clamp(2rem,5vw,3.8rem)}
+h1.hero-title em{font-style:italic;color:var(--accent);display:block}
+.hero-sub{font-size:1rem;color:var(--text-muted);max-width:480px;margin-bottom:2.5rem;line-height:1.8}
+[data-lang="ar"] .hero-sub{line-height:2}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;background:var(--accent);color:var(--bg);border-radius:50px;font-size:0.88rem;font-weight:600;transition:all var(--transition);box-shadow:0 4px 20px rgba(163,200,177,0.25)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(163,200,177,0.3);opacity:0.9}
+.btn-secondary{display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;border:1px solid var(--border-accent);color:var(--text);border-radius:50px;font-size:0.88rem;font-weight:500;transition:all var(--transition)}
+.btn-secondary:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.hero-stats{display:flex;gap:2.5rem;margin-top:3rem;padding-top:2.5rem;border-top:1px solid var(--border)}
+.stat-number{font-family:var(--font-display);font-size:2rem;font-weight:500;color:var(--accent);line-height:1}
+.stat-label{font-size:0.75rem;color:var(--text-faint);margin-top:0.25rem;letter-spacing:0.05em}
+[data-lang="ar"] .stat-label{letter-spacing:0;font-size:0.82rem}
+.hero-card{background:var(--surface);border:1px solid var(--border);border-radius:24px;padding:2.5rem;text-align:center;position:relative;overflow:hidden}
+.hero-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),var(--accent-3),transparent)}
+.hero-avatar{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-3));margin:0 auto 1.5rem;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:2.8rem;font-weight:300;color:var(--bg);position:relative}
+.hero-avatar::after{content:'✦';position:absolute;bottom:0;right:0;width:28px;height:28px;background:var(--accent-2);border-radius:50%;font-size:0.6rem;display:flex;align-items:center;justify-content:center;color:var(--bg)}
+.hero-card-name{font-family:var(--font-display);font-size:1.3rem;font-weight:400;margin-bottom:0.3rem}
+[data-lang="ar"] .hero-card-name{font-weight:600}
+.hero-card-role{font-size:0.8rem;color:var(--text-muted);margin-bottom:1.5rem}
+.hero-card-badges{display:flex;flex-direction:column;gap:0.7rem}
+.badge{display:flex;align-items:center;gap:0.7rem;background:var(--bg-3);border:1px solid var(--border);padding:0.6rem 1rem;border-radius:10px;font-size:0.8rem;color:var(--text-muted);text-align:start}
+[data-lang="ar"] .badge{font-size:0.88rem}
+.badge-icon{font-size:1rem;flex-shrink:0}
+.particles{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.particle{position:absolute;width:2px;height:2px;background:var(--accent);border-radius:50%;opacity:0;animation:float-particle linear infinite}
+@keyframes float-particle{0%{transform:translateY(100vh) scale(0);opacity:0}10%{opacity:0.6}90%{opacity:0.2}100%{transform:translateY(-10vh) scale(1);opacity:0}}
+
+/* ABOUT */
+#about{background:var(--bg-2)}
+.about-text p{color:var(--text-muted);margin-bottom:1.2rem;font-size:0.95rem;line-height:1.85}
+[data-lang="ar"] .about-text p{line-height:2;font-size:0.97rem}
+.about-credentials{margin-top:2rem;display:flex;flex-direction:column;gap:1rem}
+.cred-item{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--surface);border:1px solid var(--border);border-radius:12px;transition:border-color var(--transition)}
+.cred-item:hover{border-color:var(--border-accent)}
+.cred-icon{font-size:1.3rem;margin-top:0.1rem;flex-shrink:0}
+.cred-content strong{font-size:0.88rem;font-weight:600;display:block;margin-bottom:0.2rem}
+[data-lang="ar"] .cred-content strong{font-size:0.95rem}
+.cred-content span{font-size:0.8rem;color:var(--text-muted)}
+[data-lang="ar"] .cred-content span{font-size:0.88rem}
+.about-visual{position:relative}
+.about-portrait{background:var(--surface);border:1px solid var(--border);border-radius:20px;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.about-portrait::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 40% 30%,var(--accent-glow) 0%,transparent 60%)}
+.about-portrait-initials{font-family:var(--font-display);font-weight:300;font-size:6rem;color:var(--accent);opacity:0.15;position:absolute}
+.about-portrait-icon{position:relative;z-index:1;font-size:4rem;opacity:0.35}
+.about-portrait-card{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);background:var(--nav-bg);backdrop-filter:blur(12px);border:1px solid var(--border-accent);border-radius:14px;padding:1rem 1.5rem;text-align:center;white-space:nowrap}
+.about-portrait-card .name{font-family:var(--font-display);font-size:1rem;font-weight:400}
+[data-lang="ar"] .about-portrait-card .name{font-weight:600}
+.about-portrait-card .title{font-size:0.72rem;color:var(--accent);letter-spacing:0.04em;margin-top:0.2rem}
+.about-quote{position:absolute;top:-1rem;right:-1rem;background:var(--accent);color:var(--bg);padding:1rem 1.2rem;border-radius:14px;font-family:var(--font-display);font-size:0.88rem;font-style:italic;max-width:200px;line-height:1.5;font-weight:400;box-shadow:var(--shadow)}
+[data-lang="ar"] .about-quote{font-style:normal;font-family:var(--font-body);font-size:0.85rem;right:auto;left:-1rem}
+.about-quote::after{content:'';position:absolute;bottom:-8px;left:20px;width:16px;height:16px;background:var(--accent);clip-path:polygon(0 0,100% 0,0 100%)}
+[data-lang="ar"] .about-quote::after{left:auto;right:20px;clip-path:polygon(100% 0,0 0,100% 100%)}
+
+/* SERVICES */
+#services{background:var(--bg)}
+.services-header{text-align:center;margin-bottom:3.5rem}
+.services-header p{color:var(--text-muted);max-width:520px;margin:0 auto;font-size:0.95rem}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.service-card{background:var(--card-bg);border:1px solid var(--border);border-radius:18px;padding:2rem 1.8rem;transition:all var(--transition);position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 0% 0%,var(--accent-glow) 0%,transparent 60%);opacity:0;transition:opacity var(--transition)}
+.service-card:hover{border-color:var(--border-accent);transform:translateY(-4px);box-shadow:var(--shadow-card)}
+.service-card:hover::before{opacity:1}
+.service-icon{width:50px;height:50px;background:var(--surface-2);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.3rem;border:1px solid var(--border);transition:all var(--transition)}
+.service-card:hover .service-icon{background:var(--accent-glow);border-color:var(--border-accent)}
+.service-card h3{font-family:var(--font-display);font-size:1.2rem;font-weight:400;margin-bottom:0.7rem}
+[data-lang="ar"] .service-card h3{font-size:1.1rem;font-weight:600}
+.service-card p{font-size:0.85rem;color:var(--text-muted);line-height:1.75}
+[data-lang="ar"] .service-card p{font-size:0.9rem;line-height:1.9}
+.service-link{display:inline-flex;align-items:center;gap:0.4rem;margin-top:1.2rem;font-size:0.8rem;font-weight:600;color:var(--accent);transition:gap var(--transition)}
+.service-link:hover{gap:0.7rem}
+
+/* TESTIMONIALS */
+#testimonials{background:var(--bg-2)}
+.testimonials-header{text-align:center;margin-bottom:3.5rem}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.testimonial-card{background:var(--card-bg);border:1px solid var(--border);border-radius:18px;padding:1.8rem;display:flex;flex-direction:column;gap:1rem;transition:all var(--transition)}
+.testimonial-card:hover{border-color:var(--border-accent);transform:translateY(-3px);box-shadow:var(--shadow-card)}
+.stars{color:var(--accent-2);font-size:0.85rem;letter-spacing:0.1em}
+.testimonial-text{font-size:0.88rem;color:var(--text-muted);line-height:1.8;flex:1;font-style:italic}
+[data-lang="ar"] .testimonial-text{font-style:normal;font-size:0.92rem;line-height:2}
+.testimonial-author{display:flex;align-items:center;gap:0.8rem;padding-top:0.8rem;border-top:1px solid var(--border)}
+.author-avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-3));display:flex;align-items:center;justify-content:center;font-weight:600;font-size:0.75rem;color:var(--bg);flex-shrink:0}
+.author-name{font-size:0.85rem;font-weight:600}
+.author-label{font-size:0.72rem;color:var(--text-faint);margin-top:0.1rem}
+[data-lang="ar"] .author-label{font-size:0.78rem}
+
+/* VIDEOS */
+#videos{background:var(--bg)}
+.videos-header{text-align:center;margin-bottom:3.5rem}
+.videos-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.8rem}
+.video-card{background:var(--card-bg);border:1px solid var(--border);border-radius:18px;overflow:hidden;cursor:pointer;transition:all var(--transition);position:relative}
+.video-card:hover{border-color:var(--border-accent);transform:translateY(-4px);box-shadow:var(--shadow)}
+.video-thumb{aspect-ratio:16/9;background:var(--surface);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.video-thumb-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:5rem;opacity:0.06;user-select:none}
+.video-play-btn{width:60px;height:60px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:var(--bg);position:relative;z-index:1;transition:all var(--transition);box-shadow:0 4px 20px rgba(163,200,177,0.3)}
+.video-card:hover .video-play-btn{transform:scale(1.1);box-shadow:0 6px 28px rgba(163,200,177,0.4)}
+.video-gradient{position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,15,17,0.6) 0%,transparent 60%)}
+[data-theme="light"] .video-gradient{background:linear-gradient(0deg,rgba(245,246,242,0.5) 0%,transparent 60%)}
+.video-info{padding:1.3rem 1.5rem}
+.video-tag{font-size:0.68rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:0.4rem}
+[data-lang="ar"] .video-tag{letter-spacing:0;font-size:0.78rem;text-transform:none}
+.video-title{font-family:var(--font-display);font-size:1.1rem;font-weight:400;line-height:1.35;margin-bottom:0.4rem}
+[data-lang="ar"] .video-title{font-weight:600;font-size:1rem;line-height:1.5}
+.video-desc{font-size:0.8rem;color:var(--text-muted)}
+[data-lang="ar"] .video-desc{font-size:0.85rem;line-height:1.8}
+.video-lock{position:absolute;top:1rem;right:1rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:0.35rem 0.7rem;font-size:0.7rem;color:var(--text-muted);display:flex;align-items:center;gap:0.3rem;backdrop-filter:blur(8px)}
+[data-lang="ar"] .video-lock{right:auto;left:1rem;font-size:0.75rem}
+
+/* POPUP */
+.popup-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);z-index:500;align-items:center;justify-content:center}
+.popup-overlay.active{display:flex}
+.popup-box{background:var(--surface);border:1px solid var(--border-accent);border-radius:22px;padding:2.5rem;max-width:440px;width:90%;text-align:center;position:relative;animation:pop-in 0.35s cubic-bezier(.175,.885,.32,1.275)}
+@keyframes pop-in{from{transform:scale(0.85);opacity:0}to{transform:scale(1);opacity:1}}
+.popup-icon{font-size:2.5rem;margin-bottom:1rem}
+.popup-title{font-family:var(--font-display);font-size:1.5rem;font-weight:400;margin-bottom:0.8rem}
+[data-lang="ar"] .popup-title{font-size:1.3rem;font-weight:600}
+.popup-msg{font-size:0.9rem;color:var(--text-muted);line-height:1.7;margin-bottom:1.8rem}
+[data-lang="ar"] .popup-msg{font-size:0.95rem;line-height:1.9}
+.popup-close{position:absolute;top:1rem;right:1rem;width:32px;height:32px;border-radius:50%;background:var(--bg-3);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:0.9rem;color:var(--text-muted);transition:all var(--transition)}
+.popup-close:hover{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.popup-btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.85rem 2rem;background:var(--accent);color:var(--bg);border-radius:50px;font-size:0.88rem;font-weight:600;width:100%;transition:all var(--transition)}
+.popup-btn:hover{opacity:0.85;transform:translateY(-1px)}
+
+/* CONTACT */
+#contact{background:var(--bg-2)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start}
+.contact-info p{font-size:0.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:2rem}
+[data-lang="ar"] .contact-info p{line-height:2}
+.contact-items{display:flex;flex-direction:column;gap:1rem}
+.contact-item{display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;background:var(--surface);border:1px solid var(--border);border-radius:12px;transition:border-color var(--transition)}
+.contact-item:hover{border-color:var(--border-accent)}
+.contact-item-icon{width:40px;height:40px;border-radius:10px;background:var(--accent-glow);border:1px solid var(--border-accent);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.contact-item-label{font-size:0.7rem;color:var(--text-faint);letter-spacing:0.05em;margin-bottom:0.15rem}
+[data-lang="ar"] .contact-item-label{font-size:0.78rem;letter-spacing:0}
+.contact-item-value{font-size:0.88rem;font-weight:500}
+.contact-form{background:var(--card-bg);border:1px solid var(--border);border-radius:20px;padding:2.5rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group{margin-bottom:1rem}
+.form-group label{display:block;font-size:0.75rem;font-weight:600;letter-spacing:0.05em;color:var(--text-muted);margin-bottom:0.5rem;text-transform:uppercase}
+[data-lang="ar"] .form-group label{font-size:0.82rem;letter-spacing:0;text-transform:none}
+.form-submit{width:100%;padding:0.9rem;background:var(--accent);color:var(--bg);border-radius:12px;font-size:0.9rem;font-weight:600;transition:all var(--transition);margin-top:0.5rem}
+.form-submit:hover{opacity:0.85;transform:translateY(-1px);box-shadow:0 6px 20px rgba(163,200,177,0.25)}
+.form-success{display:none;text-align:center;padding:2rem 0}
+.form-success.show{display:block}
+.form-success .success-icon{font-size:3rem;margin-bottom:1rem}
+.form-success h4{font-family:var(--font-display);font-size:1.4rem;margin-bottom:0.5rem;font-weight:400}
+[data-lang="ar"] .form-success h4{font-weight:600}
+.form-success p{color:var(--text-muted);font-size:0.9rem}
+
+/* FOOTER */
+footer{background:var(--bg);border-top:1px solid var(--border);padding:3rem 0 2rem}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
+.footer-brand .nav-logo{font-size:1.1rem}
+.footer-brand p{font-size:0.8rem;color:var(--text-faint);margin-top:0.4rem;max-width:280px;line-height:1.6}
+[data-lang="ar"] .footer-brand p{font-size:0.88rem;line-height:1.8}
+.footer-links{display:flex;gap:2rem}
+.footer-links a{font-size:0.82rem;color:var(--text-muted);transition:color var(--transition)}
+.footer-links a:hover{color:var(--accent)}
+.footer-dev{text-align:right}
+[data-lang="ar"] .footer-dev{text-align:left}
+.footer-dev p{font-size:0.75rem;color:var(--text-faint)}
+.footer-dev a{color:var(--accent);transition:opacity var(--transition)}
+.footer-dev a:hover{opacity:0.7}
+.footer-bottom{text-align:center;margin-top:2rem;padding-top:2rem;border-top:1px solid var(--border);font-size:0.75rem;color:var(--text-faint)}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.7s cubic-bezier(.4,0,.2,1),transform 0.7s cubic-bezier(.4,0,.2,1)}
+.reveal.visible{opacity:1;transform:none}
+.reveal-delay-1{transition-delay:0.1s}
+.reveal-delay-2{transition-delay:0.2s}
+.reveal-delay-3{transition-delay:0.3s}
+.reveal-delay-4{transition-delay:0.4s}
+
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--surface-2);border-radius:5px}
+::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+
+@media(max-width:1024px){.hero-grid{grid-template-columns:1fr}.hero-card{display:none}.grid-2{grid-template-columns:1fr;gap:2.5rem}.services-grid{grid-template-columns:repeat(2,1fr)}.testimonials-grid{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.nav-links{display:none}.btn-nav{display:none}.hamburger{display:flex}.services-grid{grid-template-columns:1fr}.testimonials-grid{grid-template-columns:1fr}.videos-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.footer-inner{flex-direction:column;align-items:flex-start}.footer-dev{text-align:left}h1.hero-title{font-size:2.4rem}.hero-stats{gap:1.5rem;flex-wrap:wrap}section{padding:4rem 0}.about-quote{display:none}}
+@media(max-width:480px){.footer-links{flex-wrap:wrap;gap:1rem}.nav-actions{gap:0.4rem}}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">
+      <span class="ar">✦ د. حنان <span>الأمين</span></span>
+      <span class="en">✦ Dr. Hanan <span>AlAmeen</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about"><span class="ar">من أنا</span><span class="en">About</span></a></li>
+      <li><a href="#services"><span class="ar">الخدمات</span><span class="en">Services</span></a></li>
+      <li><a href="#testimonials"><span class="ar">آراء العملاء</span><span class="en">Stories</span></a></li>
+      <li><a href="#videos"><span class="ar">الفيديوهات</span><span class="en">Videos</span></a></li>
+      <li><a href="#contact"><span class="ar">تواصل معي</span><span class="en">Contact</span></a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle" title="Switch language">EN</button>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme">☽</button>
+      <a href="#contact" class="btn-nav"><span class="ar">📅 احجز جلسة</span><span class="en">📅 Book a Session</span></a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"><span class="ar">من أنا</span><span class="en">About</span></a>
+    <a href="#services"><span class="ar">الخدمات</span><span class="en">Services</span></a>
+    <a href="#testimonials"><span class="ar">آراء العملاء</span><span class="en">Stories</span></a>
+    <a href="#videos"><span class="ar">الفيديوهات</span><span class="en">Videos</span></a>
+    <a href="#contact"><span class="ar">تواصل معي</span><span class="en">Contact</span></a>
+    <a href="#contact" style="color:var(--accent);font-weight:600;"><span class="ar">📅 احجز جلسة ←</span><span class="en">📅 Book a Session →</span></a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="particles" id="particles"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="ar">مدربة حياة معتمدة · أكثر من ١٠ سنوات خبرة</span>
+          <span class="en">Certified Life Coach · 10+ Years Experience</span>
+        </div>
+        <h1 class="hero-title ar">أرشدك نحو حياةٍ<em>تعكس حقيقتك</em><em>وتُحقق طموحاتك</em></h1>
+        <h1 class="hero-title en">Guiding You Towards<em>A Life That Feels</em><em>Like Yours.</em></h1>
+        <p class="hero-sub ar">د. حنان الأمين تساعد الأفراد على إعادة اكتشاف وضوح الرؤية، وبناء المرونة العاطفية، والوصول إلى أعلى مستويات إمكاناتهم — جلسةً تلو الأخرى.</p>
+        <p class="hero-sub en">Dr. Hanan AlAmeen helps individuals rediscover clarity, build emotional resilience, and step into their fullest potential — one session at a time.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary"><span class="ar">📅 احجز جلسة</span><span class="en">📅 Book a Session</span></a>
+          <a href="#contact" class="btn-secondary"><span class="ar">✉ تواصل معي</span><span class="en">✉ Contact</span></a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item"><div class="stat-number"><span class="ar">١٠+</span><span class="en">10+</span></div><div class="stat-label"><span class="ar">سنوات خبرة</span><span class="en">Years Experience</span></div></div>
+          <div class="stat-item"><div class="stat-number"><span class="ar">٥٠٠+</span><span class="en">500+</span></div><div class="stat-label"><span class="ar">حياة تغيّرت</span><span class="en">Lives Transformed</span></div></div>
+          <div class="stat-item"><div class="stat-number"><span class="ar">١٠٠٪</span><span class="en">100%</span></div><div class="stat-label"><span class="ar">خصوصية تامة</span><span class="en">Confidential</span></div></div>
+        </div>
+      </div>
+      <div class="hero-card reveal reveal-delay-3">
+        <div class="hero-avatar"><span class="ar">ح</span><span class="en">H</span></div>
+        <div class="hero-card-name"><span class="ar">د. حنان الأمين</span><span class="en">Dr. Hanan AlAmeen</span></div>
+        <div class="hero-card-role"><span class="ar">مدربة حياة معتمدة · متخصصة في التطوير الشخصي</span><span class="en">Certified Life Coach & Personal Development Specialist</span></div>
+        <div class="hero-card-badges">
+          <div class="badge"><span class="badge-icon">🌿</span><span class="ar">توجيه الحياة والوضوح</span><span class="en">Life Guidance & Clarity</span></div>
+          <div class="badge"><span class="badge-icon">💛</span><span class="ar">التوازن العاطفي والرفاه</span><span class="en">Emotional Balance & Well-being</span></div>
+          <div class="badge"><span class="badge-icon">🌱</span><span class="ar">النمو الشخصي والهدف</span><span class="en">Personal Growth & Purpose</span></div>
+          <div class="badge"><span class="badge-icon">💬</span><span class="ar">جلسات حضورية وعبر الإنترنت</span><span class="en">Online & In-Person Sessions</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="grid-2">
+      <div class="about-visual reveal">
+        <div class="about-portrait">
+          <span class="about-portrait-initials ar">حا</span>
+          <span class="about-portrait-initials en">HA</span>
+          <div class="about-portrait-icon">🌿</div>
+        </div>
+        <div class="about-portrait-card">
+          <div class="name"><span class="ar">د. حنان الأمين</span><span class="en">Dr. Hanan AlAmeen</span></div>
+          <div class="title"><span class="ar">مدربة حياة معتمدة · ١٠+ سنوات</span><span class="en">CERTIFIED LIFE COACH · 10+ YEARS</span></div>
+        </div>
+        <div class="about-quote ar">«النمو يبدأ لحظة تختارين أن تؤمني بقصتك الخاصة.»</div>
+        <div class="about-quote en">"Growth begins the moment you choose to believe in your own story."</div>
+      </div>
+      <div class="about-text reveal reveal-delay-2">
+        <div class="section-label"><span class="ar">عن د. حنان</span><span class="en">About Dr. Hanan</span></div>
+        <h2 class="section-title ar">أساعدك على إيجاد <em>طريقك للأمام</em></h2>
+        <h2 class="section-title en">Helping You Find <em>Your Way Forward</em></h2>
+        <p class="ar">د. حنان الأمين مدربة حياة معتمدة تتمتع بأكثر من <strong>١٠ سنوات من الخبرة المتخصصة</strong> في مساعدة الأفراد على تجاوز تعقيدات الحياة بأناقة وهدف ووضوح. يجمع أسلوبها بين أُطر التدريب المبنية على الأدلة والفهم الإنساني العميق.</p>
+        <p class="en">Dr. Hanan AlAmeen is a certified life coach with over <strong>10 years of dedicated experience</strong> helping individuals navigate life's complexities with grace, purpose, and clarity. Her work blends evidence-based coaching frameworks with deep human understanding.</p>
+        <p class="ar">تتخصص في مساعدة من يشعرون بالتوقف أو الإرهاق أو الانفصال عن ذاتهم — لتعيدهم إلى بوصلتهم الداخلية نحو الحياة التي يريدونها حقاً. سواء كنتِ تمرين بمرحلة انتقالية، أو تسعين للتوازن العاطفي، أو تعملين على تطوير ذاتك، تقدم د. حنان مساحة آمنة وتمكينية للاستكشاف والتطور.</p>
+        <p class="en">She specializes in helping people who feel stuck, overwhelmed, or disconnected from their sense of self — guiding them back to their inner compass toward the life they truly want. Whether you're facing a major life transition, seeking emotional balance, or working toward personal growth, Dr. Hanan offers a safe, empowering space to explore and evolve.</p>
+        <p class="ar">أسلوبها دافئ وراسخ وشخصي تماماً — لأن رحلة كل إنسان جميلة في تفردها.</p>
+        <p class="en">Her approach is warm, grounded, and entirely personalized — because every person's journey is beautifully unique.</p>
+        <div class="about-credentials">
+          <div class="cred-item"><div class="cred-icon">🎓</div><div class="cred-content"><strong class="ar">مدربة حياة ورفاه معتمدة</strong><strong class="en">Certified Life & Wellness Coach</strong><span class="ar">معتمدة من ICF · التطوير الشخصي والتحول</span><span class="en">ICF Accredited · Personal Development & Transformation</span></div></div>
+          <div class="cred-item"><div class="cred-icon">🧠</div><div class="cred-content"><strong class="ar">متخصصة في الذكاء العاطفي</strong><strong class="en">Emotional Intelligence Specialist</strong><span class="ar">تدريب على EQ · تقنيات قائمة على اليقظة الذهنية</span><span class="en">EQ Coaching · Mindfulness-Based Techniques</span></div></div>
+          <div class="cred-item"><div class="cred-icon">🌍</div><div class="cred-content"><strong class="ar">أكثر من ١٠ سنوات من الممارسة</strong><strong class="en">10+ Years of Practice</strong><span class="ar">مئات العملاء تحت إرشادها عبر أبرز تحولات حياتهم</span><span class="en">Hundreds of clients guided across life's most pivotal transitions</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="services-header reveal">
+      <div class="section-label" style="justify-content:center;"><span class="ar">ما نقدمه</span><span class="en">What We Offer</span></div>
+      <h2 class="section-title ar">خدمات التدريب <em>المصممة لك</em></h2>
+      <h2 class="section-title en">Coaching Services <em>Tailored to You</em></h2>
+      <p class="ar">كل جلسة هي خطوة نحو حياة أكثر وعياً وامتلاءً وتوازناً.</p>
+      <p class="en">Every session is a step toward a more intentional, fulfilling, and balanced life.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal reveal-delay-1"><div class="service-icon">🌱</div><h3 class="ar">تدريب على اتجاه الحياة</h3><h3 class="en">Life Direction Coaching</h3><p class="ar">تشعرين بالضياع أو عدم اليقين؟ معاً سنكتشف قيمك، ونوضح رؤيتك، ونبني خارطة طريق عملية نحو حياة مليئة بالهدف والمعنى.</p><p class="en">Feeling lost or uncertain? Together, we'll uncover your values, clarify your vision, and build a practical roadmap toward a life full of purpose and meaning.</p><a href="#contact" class="service-link ar">احجز جلسة ←</a><a href="#contact" class="service-link en">Book Session →</a></div>
+      <div class="service-card reveal reveal-delay-2"><div class="service-icon">💛</div><h3 class="ar">التوازن العاطفي والرفاه</h3><h3 class="en">Emotional Balance & Well-being</h3><p class="ar">تعلّمي فهم مشاعرك وتنظيمها، والتحرر من الأنماط المقيّدة، وتنمية الهدوء الداخلي الدائم — حتى في خضم تحديات الحياة.</p><p class="en">Learn to understand and regulate your emotions, release limiting patterns, and cultivate lasting inner calm — even in the midst of life's challenges.</p><a href="#contact" class="service-link ar">احجز جلسة ←</a><a href="#contact" class="service-link en">Book Session →</a></div>
+      <div class="service-card reveal reveal-delay-3"><div class="service-icon">🚀</div><h3 class="ar">النمو الشخصي والإمكانات</h3><h3 class="en">Personal Growth & Potential</h3><p class="ar">تجاوزي الشك بالنفس، وعززي ثقتك، وانتقلي بجرأة نحو النسخة التي دائماً عرفتِ أنك تستطيعين أن تكونيها.</p><p class="en">Break through self-doubt, expand your confidence, and step boldly into the version of yourself you've always known you could become.</p><a href="#contact" class="service-link ar">احجز جلسة ←</a><a href="#contact" class="service-link en">Book Session →</a></div>
+      <div class="service-card reveal reveal-delay-1"><div class="service-icon">🤝</div><h3 class="ar">العلاقات والتواصل</h3><h3 class="en">Relationship & Communication</h3><p class="ar">ابني علاقات أكثر صحة وإشباعاً. طوّري مهارات التواصل، وضعي حدوداً بأناقة، وعززي العلاقات الأكثر أهمية في حياتك.</p><p class="en">Build healthier, more fulfilling connections. Develop communication skills, set boundaries with grace, and nurture the relationships that matter most.</p><a href="#contact" class="service-link ar">احجز جلسة ←</a><a href="#contact" class="service-link en">Book Session →</a></div>
+      <div class="service-card reveal reveal-delay-2"><div class="service-icon">🔄</div><h3 class="ar">تدريب مراحل الانتقال</h3><h3 class="en">Life Transitions Coaching</h3><p class="ar">هل تمرين بتغيير مهني أو مرحلة جديدة؟ اعثري على الاستقرار، وتكيّفي بمرونة، وحوّلي الانتقالات إلى فرص قوية.</p><p class="en">Navigating a career change or a new chapter? Find stability, adapt with resilience, and transform transitions into powerful opportunities.</p><a href="#contact" class="service-link ar">احجز جلسة ←</a><a href="#contact" class="service-link en">Book Session →</a></div>
+      <div class="service-card reveal reveal-delay-3"><div class="service-icon">💻</div><h3 class="ar">جلسات عبر الإنترنت</h3><h3 class="en">Online Coaching Sessions</h3><p class="ar">استمتعي بنفس جودة التدريب التحويلي من راحة مساحتك الخاصة — جلسات مرنة وآمنة وفعّالة أينما كنتِ.</p><p class="en">Access the same quality of transformative coaching from your own space — flexible, secure, and effective sessions wherever you are.</p><a href="#contact" class="service-link ar">احجز جلسة ←</a><a href="#contact" class="service-link en">Book Session →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testimonials-header reveal">
+      <div class="section-label" style="justify-content:center;"><span class="ar">قصص العملاء</span><span class="en">Client Stories</span></div>
+      <h2 class="section-title ar">حياة تغيّرت <em>جلسةً تلو الأخرى</em></h2>
+      <h2 class="section-title en">Lives Changed, <em>One Session at a Time</em></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal reveal-delay-1"><div class="stars">★★★★★</div><p class="testimonial-text ar">«العمل مع د. حنان كان أكثر تجارب حياتي تحويلاً. ساعدتني على رؤية وضعي بعيون جديدة ومنحتني الشجاعة لأتخذ التغييرات التي كنت أتجنبها لسنوات. رائعة حقاً.»</p><p class="testimonial-text en">"Working with Dr. Hanan was the most transformative experience of my life. She helped me see my situation with new eyes and gave me the courage to make the changes I had been avoiding for years."</p><div class="testimonial-author"><div class="author-avatar">لم</div><div><div class="author-name"><span class="ar">ليلى م.</span><span class="en">Layla M.</span></div><div class="author-label"><span class="ar">تدريب على اتجاه الحياة</span><span class="en">Life Direction Coaching</span></div></div></div></div>
+      <div class="testimonial-card reveal reveal-delay-2"><div class="stars">★★★★★</div><p class="testimonial-text ar">«جئت إلى د. حنان وأنا مُرهقة عاطفياً تماماً. في غضون جلسات قليلة، امتلكت أدوات عملية وشعوراً متجدداً بالهدوء. دفؤها وخبرتها لا مثيل لهما.»</p><p class="testimonial-text en">"I came to Dr. Hanan feeling completely overwhelmed and emotionally drained. Within just a few sessions, I had practical tools and a renewed sense of calm. Her warmth and expertise are unlike anything I've experienced."</p><div class="testimonial-author"><div class="author-avatar">خأ</div><div><div class="author-name"><span class="ar">خالد أ.</span><span class="en">Khalid A.</span></div><div class="author-label"><span class="ar">جلسات التوازن العاطفي</span><span class="en">Emotional Balance Sessions</span></div></div></div></div>
+      <div class="testimonial-card reveal reveal-delay-3"><div class="stars">★★★★★</div><p class="testimonial-text ar">«الجلسات عبر الإنترنت كانت سلسة ومؤثرة. تمتلك د. حنان موهبة في طرح الأسئلة الصحيحة في اللحظة المناسبة. أخيراً أعرف إلى أين أتجه.»</p><p class="testimonial-text en">"The online sessions were seamless and just as impactful as in-person. Dr. Hanan has a gift for asking the right questions at exactly the right moment. I finally feel like I know where I'm going."</p><div class="testimonial-author"><div class="author-avatar">سر</div><div><div class="author-name"><span class="ar">سارة ر.</span><span class="en">Sara R.</span></div><div class="author-label"><span class="ar">التدريب عبر الإنترنت</span><span class="en">Online Coaching</span></div></div></div></div>
+      <div class="testimonial-card reveal reveal-delay-1"><div class="stars">★★★★★</div><p class="testimonial-text ar">«كنت عالقة في مسيرة مهنية لم أحبها لثماني سنوات. ساعدتني د. حنان على تحديد نقاط قوتي الحقيقية وتصميم مسار مستقبلي شعرت بالحماس تجاهه.»</p><p class="testimonial-text en">"I was stuck in a career I hated for eight years. Dr. Hanan helped me identify my true strengths and design a path I was actually excited about. Six months later, I made the leap and never looked back."</p><div class="testimonial-author"><div class="author-avatar">نج</div><div><div class="author-name"><span class="ar">نور ج.</span><span class="en">Nour J.</span></div><div class="author-label"><span class="ar">تدريب مراحل الانتقال</span><span class="en">Life Transitions Coaching</span></div></div></div></div>
+      <div class="testimonial-card reveal reveal-delay-2"><div class="stars">★★★★★</div><p class="testimonial-text ar">«ساعدتني د. حنان على إعادة بناء ثقتي بنفسي بعد فترة صعبة جداً. أسلوبها لطيف لكنه قوي. ممتنة جداً لأنني وجدتها — إنها ترى وتسمع الإنسان كاملاً.»</p><p class="testimonial-text en">"Dr. Hanan helped me rebuild my confidence after a very difficult period. Her approach is gentle yet powerful. I'm so grateful to have found her. She truly sees and hears you as a whole person."</p><div class="testimonial-author"><div class="author-avatar">هت</div><div><div class="author-name"><span class="ar">هنا ت.</span><span class="en">Hana T.</span></div><div class="author-label"><span class="ar">تدريب النمو الشخصي</span><span class="en">Personal Growth Coaching</span></div></div></div></div>
+      <div class="testimonial-card reveal reveal-delay-3"><div class="stars">★★★★★</div><p class="testimonial-text ar">«علاقتي بنفسي وبالآخرين تغيّرت كلياً. تعلّمت كيف أعبّر عن احتياجاتي، وأضع حدوداً صحية، وأكون حاضرة بشكل أفضل لمن أحبهم.»</p><p class="testimonial-text en">"My relationship with myself and others has completely changed. I learned to communicate my needs, set healthy boundaries, and show up better for the people I love."</p><div class="testimonial-author"><div class="author-avatar">عم</div><div><div class="author-name"><span class="ar">عمر م.</span><span class="en">Omar M.</span></div><div class="author-label"><span class="ar">تدريب العلاقات</span><span class="en">Relationship Coaching</span></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos">
+  <div class="container">
+    <div class="videos-header reveal">
+      <div class="section-label" style="justify-content:center;"><span class="ar">محتوى تعليمي</span><span class="en">Learning Resources</span></div>
+      <h2 class="section-title ar">جلسات فيديو <em>للتدريب والإلهام</em></h2>
+      <h2 class="section-title en">Coaching <em>Video Sessions</em></h2>
+      <p style="color:var(--text-muted);max-width:520px;margin:0 auto;font-size:0.95rem;" class="ar">محتوى فيديو حصري من د. حنان. تواصل معها للحصول على حق الوصول الكامل.</p>
+      <p style="color:var(--text-muted);max-width:520px;margin:0 auto;font-size:0.95rem;" class="en">Exclusive video content from Dr. Hanan. Contact her to unlock full access to these sessions.</p>
+    </div>
+    <div class="videos-grid">
+      <div class="video-card reveal reveal-delay-1" onclick="openVideoPopup()"><div class="video-thumb"><div class="video-thumb-bg">🌿</div><div class="video-gradient"></div><div class="video-play-btn">▶</div></div><div class="video-lock">🔒 <span class="ar">للأعضاء فقط</span><span class="en">Members Only</span></div><div class="video-info"><div class="video-tag ar">النمو الشخصي</div><div class="video-tag en">Personal Growth</div><div class="video-title ar">اكتشاف الاتجاه الحقيقي لحياتك</div><div class="video-title en">Finding Your Life's True Direction</div><div class="video-desc ar">جلسة تدريبية معمّقة حول تحديد قيمك الجوهرية ومواءمتها مع خياراتك اليومية.</div><div class="video-desc en">A deep coaching session on identifying your core values and aligning them with your daily choices.</div></div></div>
+      <div class="video-card reveal reveal-delay-2" onclick="openVideoPopup()"><div class="video-thumb"><div class="video-thumb-bg">💛</div><div class="video-gradient"></div><div class="video-play-btn">▶</div></div><div class="video-lock">🔒 <span class="ar">للأعضاء فقط</span><span class="en">Members Only</span></div><div class="video-info"><div class="video-tag ar">الرفاه العاطفي</div><div class="video-tag en">Emotional Wellness</div><div class="video-title ar">إتقان مشهدك العاطفي الداخلي</div><div class="video-title en">Mastering Your Emotional Landscape</div><div class="video-desc ar">تعلّمي تقنيات عملية لفهم مشاعرك ومعالجتها وتوجيهها بطريقة بنّاءة.</div><div class="video-desc en">Learn practical techniques to understand, process, and channel your emotions constructively.</div></div></div>
+      <div class="video-card reveal reveal-delay-3" onclick="openVideoPopup()"><div class="video-thumb"><div class="video-thumb-bg">🚀</div><div class="video-gradient"></div><div class="video-play-btn">▶</div></div><div class="video-lock">🔒 <span class="ar">للأعضاء فقط</span><span class="en">Members Only</span></div><div class="video-info"><div class="video-tag ar">بناء الثقة</div><div class="video-tag en">Confidence Building</div><div class="video-title ar">كسر جدران الشك بالنفس</div><div class="video-title en">Breaking Through the Walls of Self-Doubt</div><div class="video-desc ar">جلسة تحويلية حول التغلب على المقاومة الداخلية والانتقال إلى قوتك الحقيقية.</div><div class="video-desc en">A transformative session on overcoming internal resistance and stepping into your power.</div></div></div>
+      <div class="video-card reveal reveal-delay-4" onclick="openVideoPopup()"><div class="video-thumb"><div class="video-thumb-bg">🌸</div><div class="video-gradient"></div><div class="video-play-btn">▶</div></div><div class="video-lock">🔒 <span class="ar">للأعضاء فقط</span><span class="en">Members Only</span></div><div class="video-info"><div class="video-tag ar">مراحل الانتقال</div><div class="video-tag en">Life Transitions</div><div class="video-title ar">تحويل التغيير إلى أعظم أصولك</div><div class="video-title en">Turning Change Into Your Greatest Asset</div><div class="video-desc ar">كيف تتعاملين مع الغموض وتحتضنين البدايات الجديدة وتبنين المرونة.</div><div class="video-desc en">How to navigate uncertainty, embrace new beginnings, and build resilience through life's shifts.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO POPUP -->
+<div class="popup-overlay" id="videoPopup">
+  <div class="popup-box">
+    <button class="popup-close" onclick="closeVideoPopup()">✕</button>
+    <div class="popup-icon">🔒</div>
+    <h3 class="popup-title ar">يلزم الحصول على إذن الوصول</h3>
+    <h3 class="popup-title en">Content Access Required</h3>
+    <p class="popup-msg ar">يرجى التواصل مع د. حنان الأمين للحصول على حق الوصول لهذا الفيديو. ستوجّهك شخصياً وتوفّر لك الموارد المناسبة لرحلتك.</p>
+    <p class="popup-msg en">Please contact Dr. Hanan AlAmeen to receive access to this video. She will personally guide you and provide the right resources for your journey.</p>
+    <a href="#contact" class="popup-btn" onclick="closeVideoPopup()"><span class="ar">✉ تواصل مع د. حنان</span><span class="en">✉ Contact Dr. Hanan</span></a>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+    <!-- Add this hidden input inside your form, before the button -->
+    <form action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" id="faccess_key" value="f4788033-a2c2-448d-80c0-9b43c8ac575c">
+<input type="hidden" id="fbotcheck" name="botcheck" style="display:none;">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="section-label"><span class="ar">تواصل معي</span><span class="en">Get in Touch</span></div>
+        <h2 class="section-title ar">مستعدة لبدء <em>رحلتك؟</em></h2>
+        <h2 class="section-title en">Ready to Begin <em>Your Journey?</em></h2>
+        <p class="ar">إذا كنتِ تودّين حجز جلسة تدريبية أو مجرد التواصل مع د. حنان الأمين، فهي هنا من أجلك. كل تحوّل عظيم يبدأ بخطوة واحدة شجاعة.</p>
+        <p class="en">If you'd like to book a coaching session or simply want to reach out to Dr. Hanan AlAmeen, she's here for you. Every great transformation begins with a single, courageous step.</p>
+        <div class="contact-items">
+          <div class="contact-item"><div class="contact-item-icon">📧</div><div><div class="contact-item-label"><span class="ar">البريد الإلكتروني</span><span class="en">Email</span></div><div class="contact-item-value">hnno288@gmail.com</div></div></div>
+          <div class="contact-item"><div class="contact-item-icon">📱</div><div><div class="contact-item-label"><span class="ar">الهاتف / واتساب</span><span class="en">Phone / WhatsApp</span></div><div class="contact-item-value">+20 100 000 0000</div></div></div>
+          <div class="contact-item"><div class="contact-item-icon">🕐</div><div><div class="contact-item-label"><span class="ar">مواعيد الجلسات</span><span class="en">Session Hours</span></div><div class="contact-item-value ar">الأحد – الخميس: ٩ صباحاً – ٧ مساءً</div><div class="contact-item-value en">Sun – Thu: 9:00 AM – 7:00 PM</div></div></div>
+          <div class="contact-item"><div class="contact-item-icon">💻</div><div><div class="contact-item-label"><span class="ar">أشكال الجلسات</span><span class="en">Session Formats</span></div><div class="contact-item-value ar">حضوري · زوم · هاتف</div><div class="contact-item-value en">In-person · Zoom · Phone</div></div></div>
+        </div>
+      </div>
+      <div class="contact-form reveal reveal-delay-2">
+        <div id="contactFormContent">
+          <div style="margin-bottom:1.8rem;">
+            <h3 style="font-family:var(--font-display);font-size:1.35rem;font-weight:400;margin-bottom:0.4rem;"><span class="ar">أرسلي رسالة</span><span class="en">Send a Message</span></h3>
+            <p style="font-size:0.82rem;color:var(--text-muted);"><span class="ar">ستردّ د. حنان خلال ٢٤ ساعة.</span><span class="en">Dr. Hanan will respond within 24 hours.</span></p>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label><span class="ar">الاسم الكامل</span><span class="en">Full Name</span></label><input type="text" id="fname" /></div>
+            <div class="form-group"><label><span class="ar">البريد الإلكتروني</span><span class="en">Email Address</span></label><input type="email" id="femail" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label><span class="ar">رقم الهاتف</span><span class="en">Phone Number</span></label><input type="tel" id="fphone" placeholder="+20 100 000 0000" /></div>
+            <div class="form-group"><label><span class="ar">نوع الجلسة</span><span class="en">Session Type</span></label>
+              <select id="ftype">
+                <option value="" id="selPlaceholder"></option>
+                <option id="svc1"></option><option id="svc2"></option><option id="svc3"></option>
+                <option id="svc4"></option><option id="svc5"></option><option id="svc6"></option><option id="svc7"></option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group"><label><span class="ar">رسالتك</span><span class="en">Message</span></label><textarea id="fmsg" rows="4"></textarea></div>
+          <button class="form-submit" onclick="submitForm()"><span class="ar">✦ إرسال الرسالة</span><span class="en">✦ Send Message</span></button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">✦</div>
+          <h4><span class="ar">تم إرسال الرسالة بنجاح!</span><span class="en">Message Sent Successfully!</span></h4>
+          <p><span class="ar">شكراً لتواصلك. ستردّ د. حنان خلال ٢٤ ساعة. رحلتك تبدأ من هنا.</span><span class="en">Thank you for reaching out. Dr. Hanan will get back to you within 24 hours. Your journey starts here.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo"><span class="ar">✦ د. حنان <span>الأمين</span></span><span class="en">✦ Dr. Hanan <span>AlAmeen</span></span></div>
+        <p class="ar">مساحة آمنة وتمكينية لتوجيه الحياة، والتوازن العاطفي، والنمو الشخصي. رحلتك تبدأ هنا.</p>
+        <p class="en">A safe, empowering space for life guidance, emotional balance, and personal growth. Your journey starts here.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about"><span class="ar">من أنا</span><span class="en">About</span></a>
+        <a href="#services"><span class="ar">الخدمات</span><span class="en">Services</span></a>
+        <a href="#testimonials"><span class="ar">آراء العملاء</span><span class="en">Stories</span></a>
+        <a href="#videos"><span class="ar">الفيديوهات</span><span class="en">Videos</span></a>
+        <a href="#contact"><span class="ar">تواصل معي</span><span class="en">Contact</span></a>
+      </div>
+      <div class="footer-dev">
+        <p><span class="ar">تصميم وتطوير بواسطة </span><span class="en">Website developed by </span><strong>KIN</strong></p>
+        <p>GitHub: <a href="https://github.com/Ayman-pys" target="_blank" rel="noopener">github.com/Ayman-pys</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="ar">© ٢٠٢٦ د. حنان الأمين للتدريب على الحياة. جميع الحقوق محفوظة.</span>
+      <span class="en">© 2026 Dr. Hanan AlAmeen Life Coaching. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+    async function submitForm() {
+  const accessKey  = document.getElementById('faccess_key').value;
+  const name       = document.getElementById('fname').value.trim();
+  const email      = document.getElementById('femail').value.trim();
+  const phone      = document.getElementById('fphone').value.trim();
+  const type       = document.getElementById('ftype').value;
+  const message    = document.getElementById('fmsg').value.trim();
+
+  // Basic validation
+  if (!name || !email || !message) {
+    alert(document.documentElement.lang === 'ar'
+      ? 'يرجى ملء الحقول المطلوبة: الاسم، البريد الإلكتروني، والرسالة.'
+      : 'Please fill in the required fields: Name, Email, and Message.');
+    return;
+  }
+
+  const btn = document.querySelector('.form-submit');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="ar">جاري الإرسال...</span><span class="en">Sending...</span>';
+
+  const payload = {
+    access_key: accessKey,
+    subject: 'New Coaching Session Request – Dr. Hanan AlAmeen',
+    from_name: 'Dr. Hanan AlAmeen Website',
+    botcheck: '',
+    name,
+    email,
+    phone,
+    session_type: type,
+    message
+  };
+
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    });
+
+    const result = await response.json();
+
+    if (response.ok && result.success) {
+      // Show success state
+      document.getElementById('contactFormContent').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'flex';
+    } else {
+      throw new Error(result.message || 'Submission failed');
+    }
+  } catch (err) {
+    console.error('Web3Forms error:', err);
+    alert(document.documentElement.lang === 'ar'
+      ? 'حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.'
+      : 'Something went wrong. Please try again.');
+    btn.disabled = false;
+    btn.innerHTML = '<span class="ar">✦ إرسال الرسالة</span><span class="en">✦ Send Message</span>';
+  }
+}
+const html = document.documentElement;
+
+/* ── SELECT OPTIONS DATA ── */
+const selectData = {
+  ar: ['اختاري خدمة...','تدريب على اتجاه الحياة','التوازن العاطفي والرفاه','النمو الشخصي والإمكانات','العلاقات والتواصل','تدريب مراحل الانتقال','جلسة عبر الإنترنت','لست متأكدة بعد'],
+  en: ['Select a service...','Life Direction Coaching','Emotional Balance & Well-being','Personal Growth & Potential','Relationship & Communication','Life Transitions Coaching','Online Coaching Session','Not sure yet']
+};
+const selectIds = ['selPlaceholder','svc1','svc2','svc3','svc4','svc5','svc6','svc7'];
+
+function updateSelect(lang) {
+  const data = selectData[lang];
+  selectIds.forEach((id,i) => {
+    const el = document.getElementById(id);
+    if(el) el.textContent = data[i];
+  });
+}
+
+/* ── LANGUAGE ── */
+let isAr = true;
+const langToggle = document.getElementById('langToggle');
+
+function setLang(ar) {
+  isAr = ar;
+  html.setAttribute('data-lang', ar ? 'ar' : 'en');
+  html.setAttribute('lang', ar ? 'ar' : 'en');
+  html.setAttribute('dir', ar ? 'rtl' : 'ltr');
+  langToggle.textContent = ar ? 'EN' : 'عر';
+  document.title = ar ? 'د. حنان الأمين | مدربة حياة' : 'Dr. Hanan AlAmeen | Life Coach';
+  updateSelect(ar ? 'ar' : 'en');
+}
+
+langToggle.addEventListener('click', () => setLang(!isAr));
+
+/* ── THEME ── */
+let isDark = true;
+const themeToggle = document.getElementById('themeToggle');
+themeToggle.addEventListener('click', () => {
+  isDark = !isDark;
+  html.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  themeToggle.textContent = isDark ? '☽' : '☀';
+});
+
+/* ── HAMBURGER ── */
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  hamburger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+}));
+
+/* ── VIDEO POPUP ── */
+function openVideoPopup() {
+  document.getElementById('videoPopup').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeVideoPopup() {
+  document.getElementById('videoPopup').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.getElementById('videoPopup').addEventListener('click', e => {
+  if (e.target === e.currentTarget) closeVideoPopup();
+});
+
+/* ── FORM ── */
+function submitForm() {
+  const name = document.getElementById('fname').value.trim();
+  const email = document.getElementById('femail').value.trim();
+  if (!name || !email) {
+    const inputs = document.querySelectorAll('#contactFormContent input, #contactFormContent textarea');
+    inputs.forEach(i => { if (!i.value.trim()) i.style.borderColor = 'rgba(200,100,100,0.5)'; });
+    setTimeout(() => inputs.forEach(i => i.style.borderColor = ''), 2000);
+    return;
+  }
+  document.getElementById('contactFormContent').style.display = 'none';
+  document.getElementById('formSuccess').classList.add('show');
+}
+
+/* ── SCROLL REVEAL ── */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+/* ── PARTICLES ── */
+const pc = document.getElementById('particles');
+for (let i = 0; i < 18; i++) {
+  const p = document.createElement('div');
+  p.className = 'particle';
+  p.style.cssText = `left:${Math.random()*100}%;width:${Math.random()*2.5+1}px;height:${Math.random()*2.5+1}px;animation-duration:${Math.random()*12+10}s;animation-delay:${Math.random()*15}s;`;
+  pc.appendChild(p);
+}
+
+/* ── NAVBAR SHADOW ── */
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').style.boxShadow = window.scrollY > 40 ? '0 2px 30px rgba(0,0,0,0.3)' : 'none';
+}, { passive: true });
+
+/* ── INIT ── */
+setLang(true);
+</script>
+</body>
+</html>
